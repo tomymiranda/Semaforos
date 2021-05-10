@@ -5,9 +5,13 @@
 impresoras.py
 ````
 En `impresoras.py` se simula una serie de `Computadoras` que necesitan imprimir cosas en `Impresoras`.
+
 El código implementa dos clases: *Impresora* y *Computadora*.
+
 *Impresora* : tiene dos médodos, el constructor, que recibe un número que idenfica a la impresora y el método *imprimir()* que recibe una cadena de texto y la imprime en pantalla.
+
 *Computadora*: deriva de threading Thread y tiene dos métodos, el constructor que recibe una cadena de texto y run() que implementa una thread que toma un objeto impresora desde una lista y llama al método *imprimir* de este objeto con el texto como argumento.
+
 El hilo principal crea un lista con 3 objetos impresora y a continuación arranca 5 hilos Computadora que van a intentar utilizar las impresoras disponibles.
 
 Modificar el programa utilizando semáforos de modo que las computadoras se queden esperando si no hay impresoras disponibles. 
