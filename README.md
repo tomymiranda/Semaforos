@@ -13,7 +13,7 @@ El hilo principal crea un lista con 3 objetos impresora y a continuacion arranca
 Modificar el programa utilizando semáforos de modo que las computadoras se queden esperando si no hay impresoras disponibles. Como está ahora, arroja un error al intentar sacar un elemento cuando la lista está vacía. 
 
 
-## Ejercicios 2 
+## Ejercicios 2 Comensales y Cocinero
 
 ````
 comensales.py
@@ -51,10 +51,10 @@ La salida debería verse más o menos así:
 
 No se puede asegurar que el thread que llamó al cocinero y se queda esperando, sea el primero en recibir un plato cuando el cocinero termina de cocinar. Esto es algo inherente a la concurrencia. Se puede leer de [acá](https://docs.python.org/3.8/library/threading.html#semaphore-objects) del `acquire()`.
 
-## Ejercicios 3 
+## Ejercicios 3 Comensales y Cocinero
 Modificar el ejercicio 2 de modo que haya más de un cocinero, compiten por quién cocina primero y solamente uno puede cocinar.
 
-## Ejercicios 4 
+## Ejercicios 4 Comensales y Cocinero
 Modificar el ejercicio 2 de modo que la cantidad de comensales que pueden pedir platos al mismo tiempo son 2.
 
 ## Ejercicios 5 - Vaquitas
