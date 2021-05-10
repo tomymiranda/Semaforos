@@ -51,20 +51,16 @@ La salida debería verse más o menos así:
 
 No se puede asegurar que el thread que llamó al cocinero y se queda esperando, sea el primero en recibir un plato cuando el cocinero termina de cocinar. Esto es algo inherente a la concurrencia. Se puede leer de [acá](https://docs.python.org/3.8/library/threading.html#semaphore-objects) del `acquire()`.
 
-
 ## Ejercicios 3 
 Modificar el ejercicio 2 de modo que haya más de un cocinero, compiten por quién cocina primero y solamente uno puede cocinar.
 
-## Ejercicios 4
-Modificar el ejercicio 2 de modo que haya más de un cocinero, y pueden cocinar dos a la vez.
-
-## Ejercicios 5 
-Modificar el ejercicio 2 de modo que el cocinero *agregue* platos antes de que se terminen. (Ahora nunca se va a dar el caso de que un comensal tenga que esperar al cocinero porque no hay más platos).
-
-## Ejercicios 6 
+## Ejercicios 4 
 Modificar el ejercicio 2 de modo que la cantidad de comensales que pueden pedir platos al mismo tiempo son 2.
 
-## Ejercicios 7 - Vaquitas
+## Ejercicios 5 - Vaquitas
+````
+vaquitas.py
+`````
 Vamos a simular que hay vacas yendo por un camino, todas para el mismo lado, y se topan con un puente.
 Las vacas caminan a diferentes velocidades, y el puente no soporta el paso de más de una vaca a la vez.
 
