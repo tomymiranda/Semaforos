@@ -41,4 +41,3 @@ Computadora('qué tal').start()
 Computadora('todo bien').start()
 Computadora('esta explota').start()
 Computadora('esta también').start()
-
